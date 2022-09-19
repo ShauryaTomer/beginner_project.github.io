@@ -1,0 +1,126 @@
+body {
+  margin: 0;
+  text-align: center;
+  /* Only works with full width elements like p or h1...6 or inline block elements. */
+  font-family: sans-serif;
+}
+
+h1 {
+  font-family: 'Sacramento';
+  font-size: 5.625rem;
+  /* 100% = 1em = 16px(according to font size in body); 1rem = 16px(always) */
+  margin: 70 auto 0 auto;
+  color: #66BFBF;
+  line-height: 1;
+}
+
+h2 {
+  font-size: 2rem;
+  /* 24px */
+  color: #66BFBF;
+  font-weight: bold;
+}
+
+h3 {
+  color: #11999E;
+}
+
+/* By changing width text align no longer works. Then we use margin: 0 auto to make top and bottom margin 0 and left-right margin auto implies you it will try to center the elements. */
+/*------------------------CLASS CONTAINERS--------------------*/
+.top-container {
+  background-color: #E4F9F5;
+  position: relative;
+  padding-top: 100px;
+  font-family: 'Merriweather';
+}
+
+.top-cloud {
+  position: absolute;
+  /* we want cloud to be placed alsolutely relative to top-container, so set top-container to position: relative; else absolute positioning will work wrt webpage */
+  right: 350px;
+  top: 60px;
+}
+
+.bottom-cloud {
+  position: absolute;
+  left: 200px;
+}
+
+.sharingan {
+  margin: 30px auto;
+}
+
+.middle-container {
+  /*background-color: RGBA(154, 220, 255, 0.4); */
+  font-family: sans-serif;
+}
+
+.bottom-container {
+  background-color: #FFBCBC;
+}
+
+.description {
+  width: 30%;
+  margin: 0 auto;
+  font-weight: 300;
+}
+
+.dotted {
+  border-style: dotted none none none;
+  border-width: 5px;
+  width: 5%;
+  margin: 80px auto;
+  color: #808080;
+}
+
+.ems {
+  width: 25%;
+  float: left;
+  margin-right: 30px;
+
+}
+
+.susanoo {
+  width: 25%;
+  float: right;
+  /*float property makes text wrap around an image */
+  margin-left: 30px;
+}
+
+/*
+.Genjutsu-description{
+  padding-top: 10px;
+  clear: left; clear is antifloat if you want some text to wrap around an image, but then don't want some other piece of text to not wrap, then we use clear.
+}
+
+.susanoo-description{
+  padding-top: 10px;
+  clear: right;
+}
+*/
+.heading {
+  margin: 0 auto;
+  /* margin: 0(top-bottom) auto(left-right);
+    Whichever side margin we get to auto, from that size margin will try to center the element */
+}
+
+
+.contact{
+  background-color:  #11999E;
+  padding: 5px;
+}
+
+.btn{
+  color: white;
+}
+
+.footer-link {
+  color: #11999E;
+}
+
+.skill-row {
+  margin: 50px auto 50px auto;
+  width: 50%;
+  text-align: left;
+  line-height: 1.5;
+}
